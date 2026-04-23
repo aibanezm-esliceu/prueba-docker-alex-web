@@ -1,0 +1,24 @@
+# ==========================================
+# 1. ARCHIVOS DEL SISTEMA OPERATIVO
+# ==========================================
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# 2. CONFIGURACIONES DEL EDITOR
+# ==========================================
+.vscode/
+
+# ==========================================
+# 3. DEPENDENCIAS (Por si acaso en el futuro)
+# ==========================================
+# Si alguna vez usas Composer para PHP o NPM para JavaScript
+vendor/
+node_modules/
+
+# ==========================================
+# 4. ARCHIVOS DE ENTORNO
+# ==========================================
+# Donde se suelen guardar contraseñas secretas en proyectos reales
+.env
+.env.local
