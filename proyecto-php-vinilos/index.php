@@ -1,4 +1,4 @@
-PHP
+
 <?php 
 // Definimos el título de la pestaña antes de llamar al header
 $pageTitle = "Inicio - Examen PHP";

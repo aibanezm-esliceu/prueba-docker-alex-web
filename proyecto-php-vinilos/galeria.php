@@ -1,4 +1,4 @@
-PHP
+
 <?php 
 $pageTitle = "Galería";
 require __DIR__ . "/includes/header.php"; 

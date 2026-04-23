@@ -1,4 +1,4 @@
-PHP
+
 <?php 
 $pageTitle = "Pedidos de discos";
 require __DIR__ . "/includes/header.php"; 

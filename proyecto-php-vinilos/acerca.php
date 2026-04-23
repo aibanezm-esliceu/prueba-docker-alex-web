@@ -1,4 +1,4 @@
-PHP
+
 <?php 
 // Cambiamos el título para esta página en concreto
 $pageTitle = "Acerca de - Examen PHP";
