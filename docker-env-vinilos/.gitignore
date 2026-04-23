@@ -22,3 +22,6 @@ node_modules/
 # Donde se suelen guardar contraseñas secretas en proyectos reales
 .env
 .env.local
+
+db-vinilos/
+db-examen/
