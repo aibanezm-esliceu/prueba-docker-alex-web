@@ -7,17 +7,16 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 }
 
 // 2. Recoger variables
-$nom = $_POST["nom"] ?? "";
-$telefon = $_POST["telefon"] ?? "";
-$email = $_POST["email"] ?? "";
-$missatge = $_POST["missatge"] ?? "";
+$nom = $_POST["client"] ?? "";
+$telefon = $_POST["email"] ?? "";
+$email = $_POST["disco_buscado"] ?? "";
 
 // 3. Conexión a BD
 require __DIR__ . "/db.php";
 
 // 4. Insertar datos con Prepared Statements
 try {
-    $sql = "INSERT INTO contactos (nombre, telefono, correo, mensaje) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO pedidos (cliente, telefono, correo, mensaje) VALUES (?, ?, ?, ?)";
     $stmt = $pdo->prepare($sql);
     $result = $stmt->execute([$nom, $telefon, $email, $missatge]);
 
@@ -65,7 +64,7 @@ require __DIR__ . "/db.php";
 
 // 4. Insertar datos con Prepared Statements
 try {
-    $sql = "INSERT INTO contactos (client, email, disco_buscado, missatge) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO contactos (client, email, disco_buscado, mensaje) VALUES (?, ?, ?, ?)";
     $stmt = $pdo->prepare($sql);
     $result = $stmt->execute([$client, $email, $disco_buscado, $missatge]);
 

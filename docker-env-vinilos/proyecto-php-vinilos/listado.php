@@ -5,7 +5,7 @@ require __DIR__ . "/includes/header.php";
 ?>
 <h1>Pedidos</h1>
 <table>
-    <tr><th>ID</th><th>Cliente</th><th>Email</th><th>Disco Buscado</th></tr>
+  <tr><th>ID</th><th>Título</th><th>Artista</th><th>Género</th></tr>
     <?php
     require __DIR__ . "/db.php";
     try {

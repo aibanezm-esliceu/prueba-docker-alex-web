@@ -3,7 +3,7 @@ PHP
 try {
     $pdo = new PDO(
         "mysql:host=db;dbname=vinilos_php",
-        "vinilos_user",
+        "vinilo_user",
         "retro123",
         [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
     );
